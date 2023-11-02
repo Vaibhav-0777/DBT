@@ -1,0 +1,398 @@
+*************************************************** LOW LEVEL ********************************************************************
+
+1.On the WebUI which button on the top bar should you select to see the query history?
+A.Account
+B.Worksheets
+C. Warehouses
+D.Databases
+E.History (Correct)
+F.Shares
+
+2. What are the types of Snowflake queries that a virtual warehouse can execute. Select all that apply
+A.SELECT (Correct)
+B.INSERT (Correct)
+C.SNOWPIPE
+D.COPY INTO (Correct)
+
+3. Data protected by Failsafe can be recovered by?
+A.The Snowflake support (Correct)
+B.The Snowflake customer
+C.Both the snowflake customer & the snowflake support
+
+4. What best describes Snowflake architecture?
+A.Multiple Clusters Shared Data (Correct)
+B.Single Cluster Shared Data
+C.Multiple Clusters Distributed Data
+
+
+5. The reader account belongs to ?
+A.The consumer
+B.Shared ownership
+C.The producer (Correct)
+D.Neither
+
+6.The COPY command can load data from which of the following?
+A.Internal stage (Correct)
+B.External Stage i.e. Cloud Storage (Correct)
+C.Detachable hard disks
+D.Tape drives
+
+7.Load history of Snowpipe expires after how many days.
+A.30
+B.14 (Correct)
+C.64
+
+8.Which of the below are SNOWPIPE REST APIs.
+A.insertFiles (Correct)
+B.insertReport (Correct)
+C.loadHistoryScan (Correct)
+D.loadHistoryProgress
+
+9.In which layer of its architecture does Snowflake store its metadata statistics?
+A.Storage Layer
+B.Compute Layer
+C.Database Layer
+D.Cloud Services Layer (Correct)
+
+10.Snowflake provides a mechanism for its customers to override its natural clustering algorithms. This method is:
+A.Micro-partitions
+B.Clustering keys (Correct)
+C.Key partitions
+D.Clustered partitions
+
+11.What kind of solution is Snowflake
+A.Infrastructure as a Service (IaaS)
+B.Platform as a Service (PaaS)
+C.Software as a Service (SaaS) (Correct)
+
+12.In which mode Snowflake multi-cluster warehouses can run ? Select all that apply.
+A.Maximized (Correct)
+B.Auto-resume
+C.Auto-suspending
+D.Auto-scale (Correct)
+
+13.Which table do not have Fail-safe period ? Select all that apply
+A.Permanent
+B.Temporary (Correct)
+C.Transient (Correct)
+D.External
+E.None of the above
+
+14. What Snowflake objects can be shared ? (Select all that apply)
+A.Tables (Correct)
+B.Views
+C.Roles
+D.Secure UDFs (Correct)
+E.Materialized views
+F.None of the above
+
+15.Which Snowflake Edition can a user choose when creating a trial account
+A.Standard Edition (Correct)
+B.Enterprise Edition (Correct)
+C.Free-trial Edition
+D.Virtual Private Snowflake
+E.Business Critical Edition (Correct)
+
+16. What is called the action of adding more servers to the same cluster of a virtual warehouse ?
+A.Scale UP (Correct)
+B.Scale DOWN
+C.Scale IN
+D.Sclale OUT
+E.None of the above
+
+17.Who can use the metdata cache ?
+A.Only the user who execute the query
+B.Only user with the same role
+C.Only account administrator
+D.Everyone (Correct)
+E.None of the above
+
+18. How does Snowflake billed for compute ?
+A.Per hour, with one-minute minimum
+B.Per second, with one-minute minimum (Correct)
+C.Per day
+D.Per month
+
+19.Which of the following are valid parameters when create a new virtual warehouse?
+A.RAM_SIZE
+B.WAREHOUSE_SIZE (Correct)
+C.AUTO_SUSPEND (Correct)
+D.CPU_COUNT
+E.AUTO_RESUME (Correct)
+
+20.What is the recommended file size, to optimize the number of parallel operation for a load
+A.50 MB to 150 MB (Compressed)
+B.1 MB to 10 MB (Compressed)
+C.None of the above
+D.100-250 MB (Compressed) (Correct)
+
+*************************************************** MEDIUM LEVEL *****************************************************************
+
+1. Which of the following simple transformations can be used while loading data through the COPY command?
+A.Pivot
+B.Truncate (Correct)
+C.Re-order Columns (Correct)
+D.Omit Columns (Correct)
+E.Transpose
+F.Cast (Correct)
+
+2. Multi cluster virtual warehouses are designed to handle ... Select all that apply
+A.Queuing issues (Correct)
+B.Large number of concurrent queries (Correct)
+C.Large Complex Queries
+D.Large number of concurrent users (Correct)
+
+3.Which of the following will contribute to your account level storage usage?
+A.User Defined Functions
+B.Database (and the tables in it) (Correct)
+C.Snowflake Internal Stage (Correct)
+D.Snowflake External Stages
+E.Views
+
+4. Under the Download section in Snowflake Web UI, what are the connectors & programs that can be downloaded? Select All that apply
+A.Unload Connector
+B.Redshift connector
+C.Spark Connector (Correct)
+D.Node.js driver (Correct)
+E.Python Components (Correct)
+
+5. Snowflake stores the following metadata about rows in a micro-partition. Select all that apply
+
+A.The range of values for each of the column in the micro partition (Correct)
+B.The number of distinct value (Correct)
+C.Additional properties for optimization and efficient processing (Correct)
+
+6. Using COPY INTO <location> command, you can unload data from a table (or query) into the below locations.
+A.Named internal stage (or table/user stage) (Correct)
+B.Named external stage (Correct)
+C.External location (Amazon S3, Google Cloud Storage, or Microsoft Azure) (Correct)
+D.Local drive
+
+7. If file format options are specified in multiple locations, the load operation applies the options in the following order of precedence.
+A. 1. COPY INTO TABLE statement. 2. Stage definition. 3. Table definition. (Correct)
+B. 1. Stage definition. 2. COPY INTO TABLE statement. 3. Table definition.
+C. 1. COPY INTO TABLE statement. 2. Table definition. 3. Stage definition.
+
+8. Following transformations are not supported in a COPY command.
+A.FLATTEN (Correct)
+B.JOIN (Correct)
+C.GROUP BY (Correct)
+D.NVL
+
+9. When calling the rest endpoints in snowpipe, below authentication methods are supported
+A.key pair authentication with JSON Web Token (Correct)
+B.user id and password
+C.Both
+
+10.You have a warehouse. It ran for 62 seconds and then was suspended. After that it resumed and ran for 20 seconds. For how many seconds will you be billed
+A.122 (Correct)
+B.20
+C.92
+
+11. Please select the ones that are true for a snowflake task
+A. A task can execute a single SQL Statement (Correct)
+B. A task can execute a call to a store procedure (Correct)
+C. A task can execute multiple SQL statements
+D. A task can execute a function
+
+12. What are the various types of table streams?
+A.Standard (Correct)
+B.Append-only (Correct)
+C.Insert-only (Correct)
+D.Upsert
+
+13. Which role permissions are required to create and manage streams ? Please specify the OBJECT and the PERMISSION.
+A.DATABASE - USAGE (Correct)
+B.SCHEMA - USAGE, CREATE STREAM (Correct)
+C.TABLE - SELECT (Correct)
+D.TABLE - DELETE
+
+14.What will you use to query Snowflake data loading history for the last 365 days (1 year)?
+A.COPY_HISTORY View (Correct)
+B.LOAD_HISTORY View from INFORMATION SCHEMA
+C.INSERT_HISTORY View
+
+15.How long does Bulk data load 'Load history' last ?
+A.14
+B.28
+C.32
+D.64 (Correct)
+
+16. Which cache runs on a 24 hour clock?
+A.Result cache (Correct)
+B.Metadata Cache
+C.Warehouse cache
+
+17.How many credits consume a Large-size multi-cluster warehouse with 3 warehouses which runs in Maximized mode for 2 hours
+A.24
+B.48 (Correct)
+C.16
+D.56
+
+18. Which type of view has an extra layer of protection to hide the SQL code from unauthorized viewing ?
+A.Standard
+B.Secure (Correct)
+C.Materialized
+D.Permanent
+
+19.Which of the following operation is not performed by a virtual warehouse?
+A.SNOWPIPE (Correct)
+B.DELETE
+C.SELECT
+D.INSERT
+
+20.Which security feature is supported in Snowflake?
+A.Multi-Factor Authentication
+B.All of the above (Correct)
+C.Tri-Secret Secure Encryption
+D.Role-Based Access Control
+
+
+*************************************************** HARD LEVEL *****************************************************************
+
+1.You will use this parameter to specify the number of threads to use for downloading the files using GET command
+A.PARALLEL = (Correct)
+B.DOWNLOAD_PARALLEL=
+C.DUMP=
+
+2.Which factors affect your snowflake data loading rate?
+A.Physical location of the stage (Correct)
+B.RAM on the virtual warehouse
+C.GZIP compression efficiency (Correct)
+D.Thread size
+
+3. A stream stores data in the same shape as the source table with some additional columns. Which are those additional columns?
+A.METADATA$ACTION (Correct)
+B.METADATA$ISUPDATE (Correct)
+C.METADATA$ROW_ID (Correct)
+D.METADATA$COLUMN_ID
+
+4. Which role or privileges are required to view TASK_HISTORY?
+A.Account administrator (i.e. users with the ACCOUNTADMIN role) (Correct)
+B.Task owner (i.e. role that has the OWNERSHIP privilege on a task) (Correct)
+C.Any role that has the global MONITOR EXECUTION privilege (Correct)
+D.Any one with SYSADMIN role
+
+5.What services are managed by Cloud Services layer ? (Select all that apply)
+A.Authentication (Correct)
+B.Infrastructure Management (Correct)
+C.Metadata Management (Correct)
+D.Query parsing and optimization
+E.Data storage
+F.Query processing
+
+6. Which of the following have drivers/connectors (or information about where to find them) available via Help->Downloads in the Snowflake WebUI?
+A.Go (Correct)
+B.R
+C.Node.Js (Correct)
+D.JDBC (Correct)
+E.Hive
+F.Spark
+
+
+7.Through Snowflake sharing a producer can share data with ?
+A.google driver users
+B.A non snowflake customer (Correct)
+C.other databases
+D.multiple snowflake customers (Correct)
+E.A Snowflake customer (Correct)
+
+8.The COPY command allows the following options for selecting files for loading data from a stage. Select all that apply
+A.Load files that match a pattern (Correct)
+B.Load specific files by providing exact file names (Correct)
+C.Load all files in a specific path (Correct)
+
+8.Snowflake's hierarchical key model consists of which four levels of keys:
+A.Table Master Keys (Correct)
+B.Role Keys
+C.User Keys
+D.Root Key (Correct)
+E.Account Master Keys (Correct)
+
+9.Which all permissions snowflake requires on a S3 bucket and folder to be able to access files in the folder (and subfolders)
+A.s3:GetObjectVersion (Correct)
+B.s3:ListBucket (Correct)
+C.s3:ReadObject
+D.s3:GetObject (Correct)
+
+10.What unloading data from Snowflake, which file formats can you specify? (choose 4)
+A.TSV (Correct)
+B.Parquet (Correct)
+C.Avro
+D.Orc
+E.CSV (Correct)
+F.JSON (Correct)
+
+11.What is the size limit for individual rows of the VARIANT data type?
+A.128 MB compressed
+B.16 MB uncompressed
+C.256 MB uncompressed
+D.32 MB uncompressed
+E.32 MB compressed
+F.16 MB compressed (Correct)
+
+12.Which feature below dramatically improves the performance of point lookup queries?
+A.Snowpipe
+B.Micro-partition pruning
+C.Search optimization service (Correct)
+D.Creating a view of the table
+E.Automatic clustering
+
+13.Which Snowflake edition supports Search Optimization Service to improve performance of point lookup queries?
+A.All editions
+B.Enterprise edition and above (Correct)
+C.Business Critical edition and Above
+D.All except Virtual Private Snowflake (VPS) edition
+
+14.At the following frequency interval, the resource monitor quota will be reset. (select all that apply)
+A.Daily (Correct)
+B.Weekly (Correct)
+C.Monthly (Correct)
+D.Quarterly
+E.Yearly (Correct)
+F.Never (Correct)
+
+15.Which of the following security features are available in all Snowflake editions? 
+1. Data encryption at rest using strong AES-256 bit encryption 2. Private communication between Snowflake and your other VPCs through AWS PrivateLink (or Azure PrivateLink). 3. MFA (multi-factor authentication) for account access by users. 4. Support for user SSO (single sign-on). 5. Support for encrypting data using customer-managed keys. 6. HIPAA and PCI-DSS security standards compliance
+
+A.1, 3 and 4 (Correct)
+B.1, 3, 4 and 5
+C. All except 6
+D.All of the Above
+
+
+16.Using Time Travel, you can perform the following actions within a defined period of time
+A.Query data in the past that has since been updated or deleted (Correct)
+B.Create clones of entire tables, schemas, and databases at or before specific points in the past. (Correct)
+C.Restore tables, schemas, and databases that have been dropped (Correct)
+D.Database replication
+
+17.When the retention period ends for an object,then
+
+A.The historical data is moved into Snowflake Fail-safe (Correct)
+B.Historical data is no longer available for querying (Correct)
+C.Past objects can no longer be cloned (Correct)
+D.Past objects that were dropped can no longer be restored (Correct)
+
+18.To Enable Continuous data loading options available with SnowFlake are:
+A.Snowpipe (Correct)
+B.Snowflake Connector for Kafka (Correct)
+C.Third-party data integration tools (Correct)
+D.SnowBI
+
+19.What determines how many data files can be processed in parallel? (select all that apply)
+A.How efficient the micro partitions are pruned
+B.The size of the warehouse you are using (Correct)
+C.The amount of micro partitions in the table
+D.The number of queries currently queued
+E.The amount of compute resources in a warehouse (Correct)
+F.The number of queries being ran currently
+
+20.You run a query that applies a filter on a specific column and the only micro-partitions scanned are those that contain data that matches the filter. This is an example of what?
+
+A.Query clustering
+B.Micro-partition trimming
+C.Micro-partition pruning
+D.Query pruning (Correct)
+E.Query trimming
+F.Materialized views
