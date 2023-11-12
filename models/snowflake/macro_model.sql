@@ -1,1 +1,0 @@
-select * from ({{ first_macro() }})
