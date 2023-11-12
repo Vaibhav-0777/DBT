@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table snowflake_dbt.dbt_schema.first_seed (ID integer,NAME text)
+  ;
+    -- dbt seed --
+    
+            insert into snowflake_dbt.dbt_schema.first_seed (ID, NAME) values
+            (%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s)
+        
+
+;
+  
