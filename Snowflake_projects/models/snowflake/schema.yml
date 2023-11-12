@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: customer_model
+    description: "A snowflake model"
+    columns:
+      - name: C_CUSTKEY
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
